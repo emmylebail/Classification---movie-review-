@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import nltk
 from bs4 import BeautifulSoup
 from nltk.corpus import stopwords
+from pretraitement import pretraitement
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
@@ -14,22 +15,9 @@ from sklearn.metrics import (
     ConfusionMatrixDisplay
 )
 
-# =========================================================
-# 0. Prétraitement (aligné avec l'approche KNN)
-# =========================================================
-
-nltk.download('stopwords', quiet=True)
-stop_words = set(stopwords.words('english'))
-
-def pretraitement(text):
-    text = BeautifulSoup(text, "html.parser").get_text()
-    text = text.lower()
-    text = re.sub(r'[^a-z\s]', '', text)
-    words = [w for w in text.split() if w not in stop_words]
-    return ' '.join(words)
 
 # =========================================================
-# 1. Chargement des données
+# 1. Prétraitement et chargement des données
 # =========================================================
 
 train_df = pd.read_csv("files/imdb_train.csv")
@@ -58,40 +46,42 @@ y_val   = val_df["sentiment"]
 y_test  = test_df["sentiment"]
 
 # =========================================================
-# 3. Validation tuning sur les n-grams et différents alpha
+# 3. Validation tuning sur les n-grams et alpha
 # =========================================================
 
-ALPHA = 1.0
-
+alphas        = [0.1, 0.5, 1.0]
 ngram_options = [(1,1), (1,2), (1,3)]
 
 best_ngram     = ngram_options[0]
+best_alpha     = alphas[0]
 best_val_score = -1
 
 print("===== VALIDATION TUNING =====")
 
-for ng in ngram_options:
+for ALPHA in alphas:
+    for ng in ngram_options:
 
-    vectorizer = TfidfVectorizer(
-        max_features=5000,
-        stop_words=None,   # stopwords déjà retirés en prétraitement
-        ngram_range=ng
-    )
+        vectorizer = TfidfVectorizer(
+            max_features=5000,
+            stop_words=None,
+            ngram_range=ng
+        )
 
-    X_train = vectorizer.fit_transform(train_df["review"])
-    X_val   = vectorizer.transform(val_df["review"])
+        X_train = vectorizer.fit_transform(train_df["review"])
+        X_val   = vectorizer.transform(val_df["review"])
 
-    model = MultinomialNB(alpha=ALPHA, fit_prior=True)
-    model.fit(X_train, y_train)
+        model = MultinomialNB(alpha=ALPHA, fit_prior=True)
+        model.fit(X_train, y_train)
 
-    acc = accuracy_score(y_val, model.predict(X_val))
-    print(f"ngram_range={ng} -> validation accuracy={acc:.4f}")
+        acc = accuracy_score(y_val, model.predict(X_val))
+        print(f"alpha={ALPHA}, ngram_range={ng} -> validation accuracy={acc:.4f}")
 
-    if acc > best_val_score:
-        best_val_score = acc
-        best_ngram     = ng
+        if acc > best_val_score:
+            best_val_score = acc
+            best_ngram     = ng
+            best_alpha     = ALPHA
 
-print("\nBEST ngram_range:", best_ngram)
+print(f"\nBEST ngram_range: {best_ngram}, BEST alpha: {best_alpha}")
 
 # =========================================================
 # 4. Vectorisation finale avec meilleur n-gram
@@ -99,7 +89,7 @@ print("\nBEST ngram_range:", best_ngram)
 
 vectorizer = TfidfVectorizer(
     max_features=5000,
-    stop_words=None,   # stopwords déjà retirés en prétraitement
+    stop_words=None,
     ngram_range=best_ngram
 )
 
@@ -111,7 +101,7 @@ X_test  = vectorizer.transform(test_df["review"])
 # 5. Entraînement du modèle final
 # =========================================================
 
-best_nb = MultinomialNB(alpha=ALPHA, fit_prior=True)
+best_nb = MultinomialNB(alpha=best_alpha, fit_prior=True)
 best_nb.fit(X_train, y_train)
 
 # =========================================================
