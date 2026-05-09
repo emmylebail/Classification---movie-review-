@@ -1,6 +1,6 @@
 === Run information ===
 
-Scheme:       weka.classifiers.meta.FilteredClassifier -F "weka.filters.unsupervised.attribute.StringToWordVector -R 1 -W 1000 -prune-rate -1.0 -N 0 -stemmer weka.core.stemmers.NullStemmer -stopwords-handler weka.core.stopwords.Null -M 1 -tokenizer \"weka.core.tokenizers.WordTokenizer -delimiters \\\" \\\\r\\\\n\\\\t.,;:\\\\\\\'\\\\\\\"()?!\\\"\"" -S 1 -W weka.classifiers.trees.J48 -- -C 0.1 -M 20
+Scheme:       weka.classifiers.meta.FilteredClassifier -F "weka.filters.unsupervised.attribute.StringToWordVector -R first-last -W 1000 -prune-rate -1.0 -N 0 -stemmer weka.core.stemmers.NullStemmer -stopwords-handler weka.core.stopwords.Null -M 1 -tokenizer \"weka.core.tokenizers.WordTokenizer -delimiters \\\" \\\\r\\\\n\\\\t.,;:\\\\\\\'\\\\\\\"()?!\\\"\"" -S 1 -W weka.classifiers.trees.J48 -- -C 0.1 -M 20
 Relation:     imdb
 Instances:    35000
 Attributes:   2
@@ -1577,34 +1577,34 @@ Number of Leaves  : 	188
 Size of the tree : 	375
 
 
-Time taken to build model: 1169.63 seconds
+Time taken to build model: 1602.36 seconds
 
 === Evaluation on test set ===
 
-Time taken to test model on supplied test set: 1.36 seconds
+Time taken to test model on supplied test set: 1.18 seconds
 
 === Summary ===
 
-Correctly Classified Instances        5820               77.6    %
-Incorrectly Classified Instances      1680               22.4    %
-Kappa statistic                          0.552
-Mean absolute error                      0.3108
-Root mean squared error                  0.4037
-Relative absolute error                 62.1555 %
-Root relative squared error             80.75   %
+Correctly Classified Instances        5775               77      %
+Incorrectly Classified Instances      1725               23      %
+Kappa statistic                          0.54
+Mean absolute error                      0.3138
+Root mean squared error                  0.407
+Relative absolute error                 62.7672 %
+Root relative squared error             81.3918 %
 Total Number of Instances             7500
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 0.777    0.225    0.775      0.777    0.776      0.552    0.837     0.816     positive
-                 0.775    0.223    0.777      0.775    0.776      0.552    0.837     0.816     negative
-Weighted Avg.    0.776    0.224    0.776      0.776    0.776      0.552    0.837     0.816
+                 0.770    0.230    0.770      0.770    0.770      0.540    0.836     0.817     positive
+                 0.770    0.230    0.770      0.770    0.770      0.540    0.836     0.816     negative
+Weighted Avg.    0.770    0.230    0.770      0.770    0.770      0.540    0.836     0.817
 
 === Confusion Matrix ===
 
     a    b   <-- classified as
- 2914  836 |    a = positive
-  844 2906 |    b = negative
+ 2889  861 |    a = positive
+  864 2886 |    b = negative
 
 
