@@ -77,11 +77,14 @@ python3 -c "import nltk; nltk.download('stopwords')"
 
 ### 2. Préparation des données
 
-Placez le fichier `./dataset/IMDB Dataset.csv` à la racine du dépôt, puis lancez le découpage :
+Placez le fichier `IMDB Dataset.csv` à la racine du dépôt disponible [ici](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews/data), puis lancez le découpage :
 
 ```bash
 python3 split_dataset.py
 ```
+
+Vous obtiendrez alors les fichiers `imbd_test.csv`, `imdb_train.csv`, `imdb_validation.csv`
+
 
 ### 3. Exécution des modèles
 
@@ -98,7 +101,7 @@ python3 knn/3_test.py
 ```
 
 **WEKA (J48 & Random Forest) :**  
-Charger les fichiers `.arff` présents dans `data/` et utiliser les modèles pré-enregistrés (`.model`) via l'interface WEKA.
+Charger les fichiers `.arff` présents dans `data/`
 
 ---
 
