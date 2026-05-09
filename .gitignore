@@ -1,0 +1,6 @@
+# Python cache et environnement
+__pycache__/
+*.pyc
+
+# Fichiers système et IDE
+.DS_Store

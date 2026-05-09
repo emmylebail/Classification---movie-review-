@@ -1,0 +1,15 @@
+# Manipulation de données
+pandas
+numpy
+scipy
+
+# Scraping et Prétraitement
+beautifulsoup4
+nltk
+
+# Machine Learning
+scikit-learn
+
+# Visualisation des résultats
+matplotlib
+seaborn

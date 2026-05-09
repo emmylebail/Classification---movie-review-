@@ -1,29 +1,118 @@
-# Projet de Classification : Critiques de Films
+# 🎬 Projet de Classification : Critiques de Films (Analyse de Sentiments)
 
-## Contexte
-Ce dépôt contient les scripts et les données de notre projet de fin de semestre pour le cours de **Traitement statistique des données** du Master Traitement Automatique des Langues (**pluriTAL**), année 2025-2026.
+Ce dépôt contient les travaux réalisés dans le cadre du cours de **Traitement Statistique des Données** (M1 PluriTAL, promotion 2025-2026).
 
-**Auteurs :** ZHENG Ting, ZENG Youjia, LE BAIL Emmy
+Ce projet compare l'efficacité de quatre algorithmes de classification supervisée pour l'analyse de polarité (positif vs négatif) sur le corpus IMDB.
 
-## 🎯 Objectif
-L'objectif de ce projet est d'entraîner des classifieurs par apprentissage automatique et de comparer les performances de différents algorithmes de classification sur une tâche d'analyse de sentiments (polarité positive vs négative) à partir de critiques de films. 
+**Autrices :** LE BAIL Emmy, ZENG Youjia, ZHENG Ting  
+**Référent :** Damien Nouvel (INALCO / Sorbonne Nouvelle / Nanterre)
+
+---
+
+## Objectif
+
+L'enjeu est de déterminer lequel des algorithmes testés offre la meilleure précision pour distinguer une opinion **positive** d'une **négative**, en tenant compte des défis linguistiques (négations, richesse lexicale) propres aux critiques cinématographiques.
+
+---
 
 ## Corpus
-- **Source des données :** [Précisez ici d'où viennent les critiques : AlloCiné, IMDb, un dataset existant...]
-- **Taille :** [Au moins 100 documents par classe, ex: 500 critiques positives, 500 critiques négatives]
-- **Prétraitement :** Les textes sont encodés en UTF-8. Les indices évidents (comme la note sur 5 étoiles) ont été retirés pour ne pas biaiser l'apprentissage[cite: 51].
 
-## Méthodologie et Algorithmes
-Nous avons extrait les caractéristiques des textes (vectorisation, TF-IDF, etc.) et testé les algorithmes suivants pour comparer leurs performances:
-- [ ] Naive Bayes
-- [ ] KNN (K-Nearest Neighbors)
-- [ ] WEKA / Random forest
-*(Cochez ceux que vous avez implémentés, n'oubliez pas qu'il en faut au moins deux de cette liste !)*
+- **Source :** [IMDB Movie Reviews Dataset](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews) (Maas et al.)
+- **Volume :** 50 000 critiques équilibrées
+- **Répartition :** 25 000 pour l'entraînement / 25 000 pour le test
+- **Labellisation :** Basée sur les notes IMDb (négatif ≤ 4/10, positif ≥ 7/10). Les notes intermédiaires ont été exclues pour garantir une polarité marquée.
 
-## Utilisation et Reproductibilité 
-*(Expliquez ici comment lancer vos scripts avec des instructions suffisantes pour que le professeur puisse les tester [cite: 33])*
+---
 
-1. Cloner le dépôt : `git clone https://github.com/votre-nom/votre-repo.git`
-2. Installer les dépendances : `pip install -r requirements.txt` *(si vous utilisez scikit-learn, spacy, etc. [cite: 87, 88])*
-3. Lancer la vectorisation : `python3 vectorisation.py chemin/du/corpus chemin/du/fichier/de/sortie` 
-4. Lancer l'entraînement et l'évaluation : `python main.py`
+## Méthodologie
+
+### Prétraitement & Vectorisation
+
+Le script `pretraitement.py` effectue les opérations suivantes :
+
+- **Nettoyage :** Suppression des balises HTML, normalisation (minuscules) et retrait de la ponctuation.
+- **Filtrage :** Suppression des *stopwords* (NLTK) en préservant les marqueurs de négation essentiels (*not*, *never*, *no*).
+- **Représentation :**
+  - TF-IDF via `TfidfVectorizer` (scikit-learn)
+  - Filtre `StringToWordVector` pour les modèles WEKA
+
+### Division des données (`split_dataset.py`)
+
+Le dataset est scindé en trois parties pour garantir une évaluation rigoureuse :
+
+| Ensemble | Part | Rôle |
+| :--- | :---: | :--- |
+| Entraînement | 70 % | Apprentissage |
+| Validation | 15 % | Ajustement des hyperparamètres (K, alpha…) |
+| Test | 15 % | Évaluation finale |
+
+---
+
+## Résultats et Comparaison
+
+| Algorithme | Outil | Accuracy | F1-Score (pondéré) |
+| :--- | :--- | :---: | :---: |
+| **Naive Bayes** | scikit-learn | **86,45 %** | **0,865** |
+| **Random Forest** | WEKA | 84,49 % | 0,845 |
+| **KNN (K=345)** | scikit-learn | 83,05 % | 0,830 |
+| **J48 (tuned)** | WEKA | 77,60 % | 0,776 |
+
+---
+
+## Utilisation et Reproductibilité
+
+### 1. Installation
+
+```bash
+# Cloner le dépôt
+git clone https://github.com/votre-nom/votre-repo.git
+cd votre-repo
+
+# Installer les dépendances Python
+pip install -r requirements.txt
+
+# Télécharger les ressources NLTK nécessaires
+python3 -c "import nltk; nltk.download('stopwords')"
+```
+
+### 2. Préparation des données
+
+Placez le fichier `./dataset/IMDB Dataset.csv` à la racine du dépôt, puis lancez le découpage :
+
+```bash
+python3 split_dataset.py
+```
+
+### 3. Exécution des modèles
+
+**Naive Bayes :**
+```bash
+python3 NaiveBayes.py
+```
+
+**KNN :**
+```bash
+python3 knn/1_entrainement.py
+python3 knn/2_validation.py
+python3 knn/3_test.py
+```
+
+**WEKA (J48 & Random Forest) :**  
+Charger les fichiers `.arff` présents dans `data/` et utiliser les modèles pré-enregistrés (`.model`) via l'interface WEKA.
+
+---
+
+## Structure du dépôt
+
+```text
+.
+├── data/               # Fichiers CSV (train/val/test) et formats ARFF pour WEKA
+├── evaluation/         # Matrices de confusion (PNG) et rapports de classification
+├── knn/                # Scripts d'entraînement, validation et test du KNN
+├── NaiveBayes.py       # Implémentation du modèle Naive Bayes
+├── pretraitement.py    # Fonctions de nettoyage et normalisation
+├── split_dataset.py    # Script de division Train / Val / Test
+├── requirements.txt    # Dépendances Python
+├── .gitignore          # Fichiers exclus (données lourdes, caches)
+└── README.md           # Documentation du projet
+```
