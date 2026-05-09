@@ -1,0 +1,1610 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.FilteredClassifier -F "weka.filters.unsupervised.attribute.StringToWordVector -R 1 -W 1000 -prune-rate -1.0 -N 0 -stemmer weka.core.stemmers.NullStemmer -stopwords-handler weka.core.stopwords.Null -M 1 -tokenizer \"weka.core.tokenizers.WordTokenizer -delimiters \\\" \\\\r\\\\n\\\\t.,;:\\\\\\\'\\\\\\\"()?!\\\"\"" -S 1 -W weka.classifiers.trees.J48 -- -C 0.1 -M 20
+Relation:     imdb
+Instances:    35000
+Attributes:   2
+              review
+              sentiment
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+FilteredClassifier using weka.classifiers.trees.J48 -C 0.1 -M 20 on data filtered through weka.filters.unsupervised.attribute.StringToWordVector -R 1 -W 1000 -prune-rate -1.0 -N 0 -stemmer weka.core.stemmers.NullStemmer -stopwords-handler weka.core.stopwords.Null -M 1 -tokenizer "weka.core.tokenizers.WordTokenizer -delimiters \" \\r\\n\\t.,;:\\\'\\\"()?!\""
+
+Filtered Header
+@relation 'imdb-weka.filters.unsupervised.attribute.StringToWordVector-R1-W1000-prune-rate-1.0-N0-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters \" \\r\\n\\t.,;:\\\'\\\"()?!\"'
+
+@attribute sentiment {positive,negative}
+@attribute able numeric
+@attribute absolutely numeric
+@attribute across numeric
+@attribute act numeric
+@attribute acted numeric
+@attribute acting numeric
+@attribute action numeric
+@attribute actor numeric
+@attribute actors numeric
+@attribute actress numeric
+@attribute actual numeric
+@attribute actually numeric
+@attribute add numeric
+@attribute adds numeric
+@attribute admit numeric
+@attribute adult numeric
+@attribute adventure numeric
+@attribute age numeric
+@attribute ago numeric
+@attribute agree numeric
+@attribute air numeric
+@attribute alive numeric
+@attribute almost numeric
+@attribute alone numeric
+@attribute along numeric
+@attribute already numeric
+@attribute also numeric
+@attribute although numeric
+@attribute always numeric
+@attribute amazing numeric
+@attribute america numeric
+@attribute american numeric
+@attribute among numeric
+@attribute amount numeric
+@attribute animated numeric
+@attribute animation numeric
+@attribute another numeric
+@attribute anyone numeric
+@attribute anything numeric
+@attribute anyway numeric
+@attribute apart numeric
+@attribute apparently numeric
+@attribute appear numeric
+@attribute appears numeric
+@attribute appreciate numeric
+@attribute arent numeric
+@attribute around numeric
+@attribute art numeric
+@attribute atmosphere numeric
+@attribute attempt numeric
+@attribute attention numeric
+@attribute audience numeric
+@attribute audiences numeric
+@attribute available numeric
+@attribute average numeric
+@attribute away numeric
+@attribute awesome numeric
+@attribute b numeric
+@attribute baby numeric
+@attribute back numeric
+@attribute background numeric
+@attribute bad numeric
+@attribute band numeric
+@attribute based numeric
+@attribute basically numeric
+@attribute battle numeric
+@attribute beautiful numeric
+@attribute beautifully numeric
+@attribute beauty numeric
+@attribute became numeric
+@attribute become numeric
+@attribute becomes numeric
+@attribute begin numeric
+@attribute beginning numeric
+@attribute begins numeric
+@attribute behind numeric
+@attribute believable numeric
+@attribute believe numeric
+@attribute ben numeric
+@attribute best numeric
+@attribute better numeric
+@attribute beyond numeric
+@attribute big numeric
+@attribute bill numeric
+@attribute bit numeric
+@attribute black numeric
+@attribute blood numeric
+@attribute body numeric
+@attribute bond numeric
+@attribute book numeric
+@attribute boring numeric
+@attribute box numeric
+@attribute boy numeric
+@attribute boys numeric
+@attribute break numeric
+@attribute brilliant numeric
+@attribute bring numeric
+@attribute brings numeric
+@attribute british numeric
+@attribute brother numeric
+@attribute brothers numeric
+@attribute brought numeric
+@attribute budget numeric
+@attribute business numeric
+@attribute buy numeric
+@attribute call numeric
+@attribute called numeric
+@attribute came numeric
+@attribute camera numeric
+@attribute cannot numeric
+@attribute cant numeric
+@attribute car numeric
+@attribute care numeric
+@attribute career numeric
+@attribute cartoon numeric
+@attribute case numeric
+@attribute cast numeric
+@attribute caught numeric
+@attribute century numeric
+@attribute certain numeric
+@attribute certainly numeric
+@attribute chance numeric
+@attribute change numeric
+@attribute character numeric
+@attribute characters numeric
+@attribute charles numeric
+@attribute charming numeric
+@attribute check numeric
+@attribute chemistry numeric
+@attribute child numeric
+@attribute children numeric
+@attribute choice numeric
+@attribute cinema numeric
+@attribute cinematography numeric
+@attribute city numeric
+@attribute class numeric
+@attribute classic numeric
+@attribute clear numeric
+@attribute clearly numeric
+@attribute clever numeric
+@attribute close numeric
+@attribute cold numeric
+@attribute come numeric
+@attribute comedies numeric
+@attribute comedy numeric
+@attribute comes numeric
+@attribute comic numeric
+@attribute coming numeric
+@attribute comment numeric
+@attribute comments numeric
+@attribute common numeric
+@attribute company numeric
+@attribute compared numeric
+@attribute complete numeric
+@attribute completely numeric
+@attribute complex numeric
+@attribute control numeric
+@attribute convincing numeric
+@attribute cool numeric
+@attribute cop numeric
+@attribute copy numeric
+@attribute could numeric
+@attribute couldnt numeric
+@attribute country numeric
+@attribute couple numeric
+@attribute course numeric
+@attribute crazy numeric
+@attribute create numeric
+@attribute created numeric
+@attribute creepy numeric
+@attribute crew numeric
+@attribute crime numeric
+@attribute critics numeric
+@attribute culture numeric
+@attribute cut numeric
+@attribute cute numeric
+@attribute dance numeric
+@attribute dancing numeric
+@attribute dark numeric
+@attribute daughter numeric
+@attribute david numeric
+@attribute day numeric
+@attribute days numeric
+@attribute de numeric
+@attribute dead numeric
+@attribute deal numeric
+@attribute death numeric
+@attribute decent numeric
+@attribute decided numeric
+@attribute decides numeric
+@attribute deep numeric
+@attribute definitely numeric
+@attribute deserves numeric
+@attribute despite numeric
+@attribute details numeric
+@attribute detective numeric
+@attribute dialog numeric
+@attribute dialogue numeric
+@attribute didnt numeric
+@attribute die numeric
+@attribute died numeric
+@attribute different numeric
+@attribute difficult numeric
+@attribute directed numeric
+@attribute directing numeric
+@attribute direction numeric
+@attribute director numeric
+@attribute directors numeric
+@attribute disappointed numeric
+@attribute disney numeric
+@attribute disturbing numeric
+@attribute doctor numeric
+@attribute documentary numeric
+@attribute doesnt numeric
+@attribute dog numeric
+@attribute done numeric
+@attribute dont numeric
+@attribute doubt numeric
+@attribute dr numeric
+@attribute drama numeric
+@attribute dramatic numeric
+@attribute dream numeric
+@attribute due numeric
+@attribute dvd numeric
+@attribute earlier numeric
+@attribute early numeric
+@attribute earth numeric
+@attribute easily numeric
+@attribute easy numeric
+@attribute edge numeric
+@attribute editing numeric
+@attribute effect numeric
+@attribute effective numeric
+@attribute effects numeric
+@attribute effort numeric
+@attribute either numeric
+@attribute elements numeric
+@attribute else numeric
+@attribute emotional numeric
+@attribute emotions numeric
+@attribute end numeric
+@attribute ending numeric
+@attribute ends numeric
+@attribute english numeric
+@attribute enjoy numeric
+@attribute enjoyable numeric
+@attribute enjoyed numeric
+@attribute enough numeric
+@attribute entertaining numeric
+@attribute entertainment numeric
+@attribute entire numeric
+@attribute episode numeric
+@attribute episodes numeric
+@attribute era numeric
+@attribute escape numeric
+@attribute especially numeric
+@attribute etc numeric
+@attribute even numeric
+@attribute events numeric
+@attribute eventually numeric
+@attribute ever numeric
+@attribute every numeric
+@attribute everyone numeric
+@attribute everything numeric
+@attribute evil numeric
+@attribute exactly numeric
+@attribute example numeric
+@attribute excellent numeric
+@attribute except numeric
+@attribute exciting numeric
+@attribute expect numeric
+@attribute expected numeric
+@attribute expecting numeric
+@attribute experience numeric
+@attribute extremely numeric
+@attribute eye numeric
+@attribute eyes numeric
+@attribute face numeric
+@attribute fact numeric
+@attribute fairly numeric
+@attribute fall numeric
+@attribute falls numeric
+@attribute familiar numeric
+@attribute family numeric
+@attribute famous numeric
+@attribute fan numeric
+@attribute fans numeric
+@attribute fantastic numeric
+@attribute fantasy numeric
+@attribute far numeric
+@attribute fascinating numeric
+@attribute fast numeric
+@attribute father numeric
+@attribute favorite numeric
+@attribute fear numeric
+@attribute feature numeric
+@attribute features numeric
+@attribute feel numeric
+@attribute feeling numeric
+@attribute feelings numeric
+@attribute feels numeric
+@attribute felt numeric
+@attribute female numeric
+@attribute fight numeric
+@attribute fighting numeric
+@attribute figure numeric
+@attribute filled numeric
+@attribute film numeric
+@attribute filmed numeric
+@attribute films numeric
+@attribute final numeric
+@attribute finally numeric
+@attribute find numeric
+@attribute finds numeric
+@attribute fine numeric
+@attribute fire numeric
+@attribute first numeric
+@attribute fit numeric
+@attribute five numeric
+@attribute flick numeric
+@attribute focus numeric
+@attribute follow numeric
+@attribute following numeric
+@attribute follows numeric
+@attribute footage numeric
+@attribute force numeric
+@attribute forced numeric
+@attribute forget numeric
+@attribute form numeric
+@attribute former numeric
+@attribute forward numeric
+@attribute found numeric
+@attribute four numeric
+@attribute frank numeric
+@attribute free numeric
+@attribute french numeric
+@attribute fresh numeric
+@attribute friend numeric
+@attribute friends numeric
+@attribute front numeric
+@attribute full numeric
+@attribute fun numeric
+@attribute funniest numeric
+@attribute funny numeric
+@attribute future numeric
+@attribute game numeric
+@attribute gave numeric
+@attribute gay numeric
+@attribute gem numeric
+@attribute general numeric
+@attribute genius numeric
+@attribute genre numeric
+@attribute george numeric
+@attribute german numeric
+@attribute get numeric
+@attribute gets numeric
+@attribute getting numeric
+@attribute girl numeric
+@attribute girlfriend numeric
+@attribute girls numeric
+@attribute give numeric
+@attribute given numeric
+@attribute gives numeric
+@attribute giving numeric
+@attribute glad numeric
+@attribute go numeric
+@attribute god numeric
+@attribute goes numeric
+@attribute going numeric
+@attribute gone numeric
+@attribute good numeric
+@attribute gore numeric
+@attribute gorgeous numeric
+@attribute got numeric
+@attribute great numeric
+@attribute greatest numeric
+@attribute group numeric
+@attribute guess numeric
+@attribute guy numeric
+@attribute guys numeric
+@attribute half numeric
+@attribute hand numeric
+@attribute hands numeric
+@attribute happen numeric
+@attribute happened numeric
+@attribute happens numeric
+@attribute happy numeric
+@attribute hard numeric
+@attribute harry numeric
+@attribute hate numeric
+@attribute havent numeric
+@attribute head numeric
+@attribute hear numeric
+@attribute heard numeric
+@attribute heart numeric
+@attribute hell numeric
+@attribute help numeric
+@attribute helps numeric
+@attribute hero numeric
+@attribute hes numeric
+@attribute high numeric
+@attribute highly numeric
+@attribute hilarious numeric
+@attribute history numeric
+@attribute hit numeric
+@attribute hold numeric
+@attribute hollywood numeric
+@attribute home numeric
+@attribute honest numeric
+@attribute hope numeric
+@attribute horror numeric
+@attribute hot numeric
+@attribute hour numeric
+@attribute hours numeric
+@attribute house numeric
+@attribute however numeric
+@attribute huge numeric
+@attribute human numeric
+@attribute humor numeric
+@attribute humour numeric
+@attribute husband numeric
+@attribute id numeric
+@attribute idea numeric
+@attribute ill numeric
+@attribute im numeric
+@attribute images numeric
+@attribute imagine numeric
+@attribute important numeric
+@attribute impressive numeric
+@attribute including numeric
+@attribute incredible numeric
+@attribute incredibly numeric
+@attribute indeed numeric
+@attribute innocent numeric
+@attribute inside numeric
+@attribute instead numeric
+@attribute intelligent numeric
+@attribute intense numeric
+@attribute interest numeric
+@attribute interested numeric
+@attribute interesting numeric
+@attribute involved numeric
+@attribute island numeric
+@attribute isnt numeric
+@attribute issues numeric
+@attribute italian numeric
+@attribute ive numeric
+@attribute jack numeric
+@attribute james numeric
+@attribute jane numeric
+@attribute japanese numeric
+@attribute job numeric
+@attribute joe numeric
+@attribute john numeric
+@attribute jokes numeric
+@attribute journey numeric
+@attribute keep numeric
+@attribute keeps numeric
+@attribute kept numeric
+@attribute kid numeric
+@attribute kids numeric
+@attribute kill numeric
+@attribute killed numeric
+@attribute killer numeric
+@attribute killing numeric
+@attribute kind numeric
+@attribute king numeric
+@attribute knew numeric
+@attribute know numeric
+@attribute known numeric
+@attribute knows numeric
+@attribute la numeric
+@attribute lack numeric
+@attribute lady numeric
+@attribute language numeric
+@attribute large numeric
+@attribute last numeric
+@attribute late numeric
+@attribute later numeric
+@attribute laugh numeric
+@attribute laughing numeric
+@attribute laughs numeric
+@attribute lead numeric
+@attribute leading numeric
+@attribute leads numeric
+@attribute learn numeric
+@attribute least numeric
+@attribute leave numeric
+@attribute leaves numeric
+@attribute leaving numeric
+@attribute lee numeric
+@attribute left numeric
+@attribute less numeric
+@attribute let numeric
+@attribute lets numeric
+@attribute level numeric
+@attribute life numeric
+@attribute light numeric
+@attribute like numeric
+@attribute liked numeric
+@attribute line numeric
+@attribute lines numeric
+@attribute little numeric
+@attribute live numeric
+@attribute lives numeric
+@attribute living numeric
+@attribute local numeric
+@attribute long numeric
+@attribute look numeric
+@attribute looked numeric
+@attribute looking numeric
+@attribute looks numeric
+@attribute lost numeric
+@attribute lot numeric
+@attribute lots numeric
+@attribute love numeric
+@attribute loved numeric
+@attribute lovely numeric
+@attribute loves numeric
+@attribute low numeric
+@attribute made numeric
+@attribute main numeric
+@attribute major numeric
+@attribute make numeric
+@attribute makes numeric
+@attribute making numeric
+@attribute male numeric
+@attribute man numeric
+@attribute manages numeric
+@attribute many numeric
+@attribute mark numeric
+@attribute married numeric
+@attribute master numeric
+@attribute masterpiece numeric
+@attribute match numeric
+@attribute material numeric
+@attribute matter numeric
+@attribute may numeric
+@attribute maybe numeric
+@attribute mean numeric
+@attribute meaning numeric
+@attribute means numeric
+@attribute meant numeric
+@attribute meet numeric
+@attribute meets numeric
+@attribute members numeric
+@attribute memorable numeric
+@attribute men numeric
+@attribute mention numeric
+@attribute mentioned numeric
+@attribute message numeric
+@attribute michael numeric
+@attribute middle numeric
+@attribute might numeric
+@attribute mind numeric
+@attribute minute numeric
+@attribute minutes numeric
+@attribute miss numeric
+@attribute missed numeric
+@attribute missing numeric
+@attribute modern numeric
+@attribute moment numeric
+@attribute moments numeric
+@attribute money numeric
+@attribute mood numeric
+@attribute mostly numeric
+@attribute mother numeric
+@attribute move numeric
+@attribute moves numeric
+@attribute movie numeric
+@attribute movies numeric
+@attribute moving numeric
+@attribute mr numeric
+@attribute much numeric
+@attribute murder numeric
+@attribute music numeric
+@attribute musical numeric
+@attribute must numeric
+@attribute mystery numeric
+@attribute name numeric
+@attribute named numeric
+@attribute natural numeric
+@attribute nature numeric
+@attribute near numeric
+@attribute nearly numeric
+@attribute need numeric
+@attribute needed numeric
+@attribute needs numeric
+@attribute never numeric
+@attribute new numeric
+@attribute next numeric
+@attribute nice numeric
+@attribute night numeric
+@attribute no numeric
+@attribute none numeric
+@attribute normal numeric
+@attribute not numeric
+@attribute note numeric
+@attribute nothing numeric
+@attribute novel numeric
+@attribute number numeric
+@attribute obvious numeric
+@attribute obviously numeric
+@attribute odd numeric
+@attribute office numeric
+@attribute often numeric
+@attribute oh numeric
+@attribute ok numeric
+@attribute old numeric
+@attribute older numeric
+@attribute one numeric
+@attribute ones numeric
+@attribute open numeric
+@attribute opening numeric
+@attribute opinion numeric
+@attribute order numeric
+@attribute original numeric
+@attribute oscar numeric
+@attribute others numeric
+@attribute outside numeric
+@attribute outstanding numeric
+@attribute overall numeric
+@attribute pace numeric
+@attribute parents numeric
+@attribute paris numeric
+@attribute part numeric
+@attribute particular numeric
+@attribute particularly numeric
+@attribute parts numeric
+@attribute party numeric
+@attribute past numeric
+@attribute paul numeric
+@attribute people numeric
+@attribute perfect numeric
+@attribute perfectly numeric
+@attribute performance numeric
+@attribute performances numeric
+@attribute perhaps numeric
+@attribute period numeric
+@attribute person numeric
+@attribute personal numeric
+@attribute peter numeric
+@attribute picture numeric
+@attribute pictures numeric
+@attribute piece numeric
+@attribute place numeric
+@attribute play numeric
+@attribute played numeric
+@attribute playing numeric
+@attribute plays numeric
+@attribute please numeric
+@attribute plenty numeric
+@attribute plot numeric
+@attribute plus numeric
+@attribute point numeric
+@attribute points numeric
+@attribute police numeric
+@attribute political numeric
+@attribute poor numeric
+@attribute popular numeric
+@attribute portrayal numeric
+@attribute portrayed numeric
+@attribute possible numeric
+@attribute possibly numeric
+@attribute power numeric
+@attribute powerful numeric
+@attribute present numeric
+@attribute pretty numeric
+@attribute previous numeric
+@attribute probably numeric
+@attribute problem numeric
+@attribute problems numeric
+@attribute produced numeric
+@attribute production numeric
+@attribute public numeric
+@attribute pure numeric
+@attribute put numeric
+@attribute puts numeric
+@attribute quality numeric
+@attribute question numeric
+@attribute questions numeric
+@attribute quickly numeric
+@attribute quite numeric
+@attribute rare numeric
+@attribute rate numeric
+@attribute rather numeric
+@attribute rating numeric
+@attribute read numeric
+@attribute reading numeric
+@attribute real numeric
+@attribute realistic numeric
+@attribute reality numeric
+@attribute realize numeric
+@attribute really numeric
+@attribute reason numeric
+@attribute reasons numeric
+@attribute recent numeric
+@attribute recently numeric
+@attribute recommend numeric
+@attribute recommended numeric
+@attribute red numeric
+@attribute relationship numeric
+@attribute relationships numeric
+@attribute release numeric
+@attribute released numeric
+@attribute remains numeric
+@attribute remember numeric
+@attribute rest numeric
+@attribute result numeric
+@attribute return numeric
+@attribute review numeric
+@attribute reviews numeric
+@attribute rich numeric
+@attribute richard numeric
+@attribute right numeric
+@attribute robert numeric
+@attribute rock numeric
+@attribute role numeric
+@attribute roles numeric
+@attribute romance numeric
+@attribute romantic numeric
+@attribute room numeric
+@attribute run numeric
+@attribute running numeric
+@attribute sad numeric
+@attribute said numeric
+@attribute save numeric
+@attribute saw numeric
+@attribute say numeric
+@attribute saying numeric
+@attribute says numeric
+@attribute scary numeric
+@attribute scene numeric
+@attribute scenes numeric
+@attribute school numeric
+@attribute scifi numeric
+@attribute score numeric
+@attribute scott numeric
+@attribute screen numeric
+@attribute screenplay numeric
+@attribute script numeric
+@attribute season numeric
+@attribute second numeric
+@attribute secret numeric
+@attribute see numeric
+@attribute seeing numeric
+@attribute seem numeric
+@attribute seemed numeric
+@attribute seems numeric
+@attribute seen numeric
+@attribute sees numeric
+@attribute sense numeric
+@attribute sequel numeric
+@attribute sequence numeric
+@attribute sequences numeric
+@attribute series numeric
+@attribute serious numeric
+@attribute seriously numeric
+@attribute set numeric
+@attribute sets numeric
+@attribute setting numeric
+@attribute several numeric
+@attribute sex numeric
+@attribute sexual numeric
+@attribute shame numeric
+@attribute shes numeric
+@attribute short numeric
+@attribute shot numeric
+@attribute shots numeric
+@attribute show numeric
+@attribute showed numeric
+@attribute showing numeric
+@attribute shown numeric
+@attribute shows numeric
+@attribute side numeric
+@attribute silent numeric
+@attribute silly numeric
+@attribute similar numeric
+@attribute simple numeric
+@attribute simply numeric
+@attribute since numeric
+@attribute singing numeric
+@attribute single numeric
+@attribute sister numeric
+@attribute situation numeric
+@attribute situations numeric
+@attribute slightly numeric
+@attribute slow numeric
+@attribute small numeric
+@attribute social numeric
+@attribute society numeric
+@attribute soldiers numeric
+@attribute solid numeric
+@attribute somehow numeric
+@attribute someone numeric
+@attribute something numeric
+@attribute sometimes numeric
+@attribute somewhat numeric
+@attribute son numeric
+@attribute song numeric
+@attribute songs numeric
+@attribute soon numeric
+@attribute sort numeric
+@attribute sound numeric
+@attribute soundtrack numeric
+@attribute south numeric
+@attribute space numeric
+@attribute special numeric
+@attribute spirit numeric
+@attribute stage numeric
+@attribute stand numeric
+@attribute stands numeric
+@attribute star numeric
+@attribute starring numeric
+@attribute stars numeric
+@attribute start numeric
+@attribute started numeric
+@attribute starts numeric
+@attribute stay numeric
+@attribute still numeric
+@attribute stop numeric
+@attribute stories numeric
+@attribute story numeric
+@attribute storyline numeric
+@attribute straight numeric
+@attribute strange numeric
+@attribute street numeric
+@attribute strong numeric
+@attribute studio numeric
+@attribute stuff numeric
+@attribute stunning numeric
+@attribute stupid numeric
+@attribute style numeric
+@attribute subject numeric
+@attribute subtle numeric
+@attribute success numeric
+@attribute successful numeric
+@attribute superb numeric
+@attribute supporting numeric
+@attribute supposed numeric
+@attribute sure numeric
+@attribute surprise numeric
+@attribute surprised numeric
+@attribute surprisingly numeric
+@attribute suspense numeric
+@attribute sweet numeric
+@attribute take numeric
+@attribute taken numeric
+@attribute takes numeric
+@attribute taking numeric
+@attribute tale numeric
+@attribute talent numeric
+@attribute talented numeric
+@attribute talk numeric
+@attribute talking numeric
+@attribute team numeric
+@attribute television numeric
+@attribute tell numeric
+@attribute telling numeric
+@attribute tells numeric
+@attribute ten numeric
+@attribute tension numeric
+@attribute terms numeric
+@attribute terrific numeric
+@attribute th numeric
+@attribute thanks numeric
+@attribute thats numeric
+@attribute theater numeric
+@attribute theme numeric
+@attribute themes numeric
+@attribute theres numeric
+@attribute theyre numeric
+@attribute thing numeric
+@attribute things numeric
+@attribute think numeric
+@attribute thinking numeric
+@attribute third numeric
+@attribute though numeric
+@attribute thought numeric
+@attribute three numeric
+@attribute thriller numeric
+@attribute throughout numeric
+@attribute time numeric
+@attribute times numeric
+@attribute title numeric
+@attribute today numeric
+@attribute together numeric
+@attribute told numeric
+@attribute tom numeric
+@attribute tone numeric
+@attribute tony numeric
+@attribute took numeric
+@attribute top numeric
+@attribute totally numeric
+@attribute touch numeric
+@attribute touching numeric
+@attribute tough numeric
+@attribute towards numeric
+@attribute town numeric
+@attribute tried numeric
+@attribute tries numeric
+@attribute trip numeric
+@attribute true numeric
+@attribute truly numeric
+@attribute truth numeric
+@attribute try numeric
+@attribute trying numeric
+@attribute turn numeric
+@attribute turned numeric
+@attribute turns numeric
+@attribute tv numeric
+@attribute twist numeric
+@attribute twists numeric
+@attribute two numeric
+@attribute type numeric
+@attribute typical numeric
+@attribute ultimately numeric
+@attribute understand numeric
+@attribute unfortunately numeric
+@attribute unique numeric
+@attribute unlike numeric
+@attribute upon numeric
+@attribute us numeric
+@attribute use numeric
+@attribute used numeric
+@attribute uses numeric
+@attribute using numeric
+@attribute usual numeric
+@attribute usually numeric
+@attribute various numeric
+@attribute version numeric
+@attribute video numeric
+@attribute view numeric
+@attribute viewer numeric
+@attribute viewers numeric
+@attribute viewing numeric
+@attribute villain numeric
+@attribute violence numeric
+@attribute violent numeric
+@attribute visual numeric
+@attribute voice numeric
+@attribute wait numeric
+@attribute waiting numeric
+@attribute want numeric
+@attribute wanted numeric
+@attribute wants numeric
+@attribute war numeric
+@attribute wasnt numeric
+@attribute watch numeric
+@attribute watched numeric
+@attribute watching numeric
+@attribute water numeric
+@attribute way numeric
+@attribute ways numeric
+@attribute weird numeric
+@attribute well numeric
+@attribute went numeric
+@attribute west numeric
+@attribute western numeric
+@attribute whatever numeric
+@attribute whats numeric
+@attribute whether numeric
+@attribute white numeric
+@attribute whole numeric
+@attribute whos numeric
+@attribute whose numeric
+@attribute wife numeric
+@attribute william numeric
+@attribute win numeric
+@attribute wish numeric
+@attribute within numeric
+@attribute without numeric
+@attribute woman numeric
+@attribute women numeric
+@attribute wonder numeric
+@attribute wonderful numeric
+@attribute wonderfully numeric
+@attribute wont numeric
+@attribute word numeric
+@attribute words numeric
+@attribute work numeric
+@attribute worked numeric
+@attribute working numeric
+@attribute works numeric
+@attribute world numeric
+@attribute worth numeric
+@attribute would numeric
+@attribute wouldnt numeric
+@attribute writer numeric
+@attribute writing numeric
+@attribute written numeric
+@attribute wrong numeric
+@attribute year numeric
+@attribute years numeric
+@attribute yes numeric
+@attribute yet numeric
+@attribute york numeric
+@attribute youll numeric
+@attribute young numeric
+@attribute younger numeric
+@attribute youre numeric
+@attribute youve numeric
+@attribute accent numeric
+@attribute alien numeric
+@attribute amusing numeric
+@attribute annoying numeric
+@attribute aside numeric
+@attribute ask numeric
+@attribute attempts numeric
+@attribute avoid numeric
+@attribute awful numeric
+@attribute badly numeric
+@attribute barely numeric
+@attribute basic numeric
+@attribute biggest numeric
+@attribute bizarre numeric
+@attribute bored numeric
+@attribute bother numeric
+@attribute bottom numeric
+@attribute bought numeric
+@attribute brain numeric
+@attribute bunch numeric
+@attribute casting numeric
+@attribute cause numeric
+@attribute channel numeric
+@attribute cheap numeric
+@attribute cheesy numeric
+@attribute christmas numeric
+@attribute clich numeric
+@attribute college numeric
+@attribute computer numeric
+@attribute concept numeric
+@attribute confusing numeric
+@attribute considering numeric
+@attribute cover numeric
+@attribute crap numeric
+@attribute credit numeric
+@attribute credits numeric
+@attribute decide numeric
+@attribute development numeric
+@attribute disappointing numeric
+@attribute disappointment numeric
+@attribute dull numeric
+@attribute dumb numeric
+@attribute ed numeric
+@attribute ended numeric
+@attribute entirely numeric
+@attribute excuse numeric
+@attribute explain numeric
+@attribute failed numeric
+@attribute fails numeric
+@attribute fair numeric
+@attribute fake numeric
+@attribute filmmakers numeric
+@attribute flat numeric
+@attribute gang numeric
+@attribute garbage numeric
+@attribute generally numeric
+@attribute giant numeric
+@attribute gun numeric
+@attribute hair numeric
+@attribute hardly numeric
+@attribute hey numeric
+@attribute holes numeric
+@attribute honestly numeric
+@attribute hoping numeric
+@attribute horrible numeric
+@attribute ideas numeric
+@attribute imdb numeric
+@attribute impossible numeric
+@attribute joke numeric
+@attribute kills numeric
+@attribute lacks numeric
+@attribute lame numeric
+@attribute laughable numeric
+@attribute likes numeric
+@attribute list numeric
+@attribute literally numeric
+@attribute longer numeric
+@attribute mad numeric
+@attribute makers numeric
+@attribute makeup numeric
+@attribute mediocre numeric
+@attribute mess numeric
+@attribute monster numeric
+@attribute naked numeric
+@attribute neither numeric
+@attribute nobody numeric
+@attribute nor numeric
+@attribute nowhere numeric
+@attribute nudity numeric
+@attribute okay numeric
+@attribute otherwise numeric
+@attribute paid numeric
+@attribute painful numeric
+@attribute pass numeric
+@attribute pathetic numeric
+@attribute pay numeric
+@attribute plain numeric
+@attribute plan numeric
+@attribute pointless numeric
+@attribute poorly numeric
+@attribute porn numeric
+@attribute positive numeric
+@attribute potential numeric
+@attribute predictable numeric
+@attribute premise numeric
+@attribute producers numeric
+@attribute project numeric
+@attribute purpose numeric
+@attribute random numeric
+@attribute redeeming numeric
+@attribute remake numeric
+@attribute rent numeric
+@attribute rented numeric
+@attribute revenge numeric
+@attribute ridiculous numeric
+@attribute sadly numeric
+@attribute science numeric
+@attribute seconds numeric
+@attribute shoot numeric
+@attribute shooting numeric
+@attribute sick numeric
+@attribute sit numeric
+@attribute sitting numeric
+@attribute slasher numeric
+@attribute somewhere numeric
+@attribute sorry numeric
+@attribute sounds numeric
+@attribute speak numeric
+@attribute spend numeric
+@attribute spent numeric
+@attribute spoilers numeric
+@attribute state numeric
+@attribute stick numeric
+@attribute store numeric
+@attribute sucks numeric
+@attribute suddenly numeric
+@attribute suppose numeric
+@attribute supposedly numeric
+@attribute terrible numeric
+@attribute thinks numeric
+@attribute throw numeric
+@attribute thrown numeric
+@attribute total numeric
+@attribute train numeric
+@attribute trash numeric
+@attribute trouble numeric
+@attribute ugly numeric
+@attribute unbelievable numeric
+@attribute unless numeric
+@attribute utterly numeric
+@attribute value numeric
+@attribute vampire numeric
+@attribute van numeric
+@attribute walk numeric
+@attribute walking numeric
+@attribute waste numeric
+@attribute wasted numeric
+@attribute weak numeric
+@attribute werent numeric
+@attribute whatsoever numeric
+@attribute wooden numeric
+@attribute woods numeric
+@attribute worse numeric
+@attribute worst numeric
+@attribute write numeric
+@attribute writers numeric
+@attribute wrote numeric
+@attribute yeah numeric
+@attribute youd numeric
+@attribute zombie numeric
+@attribute zombies numeric
+
+@data
+
+
+Classifier Model
+J48 pruned tree
+------------------
+
+waste <= 0
+|   worst <= 0
+|   |   awful <= 0
+|   |   |   poorly <= 0
+|   |   |   |   redeeming <= 0
+|   |   |   |   |   laughable <= 0
+|   |   |   |   |   |   wasted <= 0
+|   |   |   |   |   |   |   lame <= 0
+|   |   |   |   |   |   |   |   horrible <= 0
+|   |   |   |   |   |   |   |   |   pointless <= 0
+|   |   |   |   |   |   |   |   |   |   terrible <= 0
+|   |   |   |   |   |   |   |   |   |   |   pathetic <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   sucks <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   dull <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   stupid <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   fails <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   bad <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   disappointing <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   disappointment <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   boring <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ridiculous <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   whatsoever <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   mediocre <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   worse <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   mess <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   lacks <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   supposed <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   poor <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   annoying <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   superb <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   excellent <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wonderful <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   gem <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   fantastic <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   dumb <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   beautifully <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   great <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   perfect <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   seconds <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   slasher <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   crap <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   okay <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ugly <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   nothing <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ok <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   avoid <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   oh <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   barely <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   weak <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   otherwise <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   money <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   disappointed <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   predictable <= 0: positive (6325.0/1589.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   predictable > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   way <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   movie <= 0: positive (38.0/15.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   movie > 0: negative (54.0/18.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   way > 0: positive (24.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   disappointed > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wont <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   film <= 0: positive (67.0/25.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   film > 0: negative (71.0/27.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wont > 0: positive (35.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   money > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   job <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   still <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   best <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   way <= 0: negative (133.0/51.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   way > 0: positive (32.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   best > 0: positive (35.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   still > 0: positive (24.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   job > 0: positive (24.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   otherwise > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   end <= 0: positive (81.0/33.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   end > 0: negative (21.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   weak > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   plot <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   movie <= 0: negative (33.0/13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   movie > 0: positive (40.0/15.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   plot > 0: negative (23.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   barely > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   films <= 0: negative (46.0/16.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   films > 0: positive (25.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   oh > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   best <= 0: negative (131.0/55.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   best > 0: positive (25.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   avoid > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   characters <= 0: negative (74.0/27.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   characters > 0: positive (23.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ok > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   still <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   even <= 0: negative (82.0/25.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   even > 0: positive (31.0/13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   still > 0: positive (24.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   nothing > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   highly <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   war <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   heart <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   dvd <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   problem <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   others <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   performance <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   love <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   totally <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   seeing <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   right <= 0: negative (313.0/98.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   right > 0: positive (30.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   seeing > 0: positive (25.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   totally > 0: negative (23.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   love > 0: positive (71.0/28.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   performance > 0: positive (34.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   others > 0: positive (35.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   problem > 0: negative (28.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   dvd > 0: positive (37.0/12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   heart > 0: positive (27.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   war > 0: positive (35.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   highly > 0: positive (27.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ugly > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   movie <= 0: negative (25.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   movie > 0: positive (22.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   okay > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   people <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   even <= 0: negative (62.0/27.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   even > 0: positive (31.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   people > 0: negative (48.0/12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   crap > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   films <= 0: negative (92.0/27.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   films > 0: positive (31.0/12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   slasher > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   good <= 0: negative (28.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   good > 0: positive (20.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   seconds > 0: negative (60.0/21.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   perfect > 0: positive (434.0/41.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   great > 0: positive (3171.0/456.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   beautifully > 0: positive (255.0/18.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   dumb > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   comedy <= 0: negative (76.0/27.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   comedy > 0: positive (24.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   fantastic > 0: positive (363.0/26.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   gem > 0: positive (207.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wonderful > 0: positive (944.0/68.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   excellent > 0: positive (1365.0/92.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   superb > 0: positive (537.0/21.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   annoying > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   isnt <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   best <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   still <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   get <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   also <= 0: negative (84.0/35.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   also > 0: positive (22.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   get > 0: negative (27.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   still > 0: positive (27.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   best > 0: positive (32.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   isnt > 0: negative (28.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   poor > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wonderful <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   excellent <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   greatest <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   life <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   great <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   especially <= 0: negative (291.0/82.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   especially > 0: positive (24.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   great > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   first <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   like <= 0: positive (31.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   like > 0: negative (24.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   first > 0: positive (22.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   life > 0: positive (81.0/23.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   greatest > 0: positive (24.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   excellent > 0: positive (39.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wonderful > 0: positive (41.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   supposed > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   performance <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   entertaining <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   fun <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   job <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   looked <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   nice <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   minutes <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   seen <= 0: negative (237.0/82.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   seen > 0: positive (44.0/15.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   minutes > 0: negative (26.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   nice > 0: positive (25.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   looked > 0: negative (20.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   job > 0: positive (29.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   fun > 0: positive (35.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   entertaining > 0: positive (23.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   performance > 0: positive (36.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   lacks > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   best <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   two <= 0: negative (104.0/31.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   two > 0: positive (21.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   best > 0: positive (26.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   mess > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   great <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   best <= 0: negative (119.0/35.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   best > 0: positive (29.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   great > 0: positive (43.0/13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   worse > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   times <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   well <= 0: negative (198.0/61.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   well > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   would <= 0: positive (45.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   would > 0: negative (43.0/17.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   times > 0: positive (45.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   mediocre > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   great <= 0: negative (94.0/29.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   great > 0: positive (36.0/13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   whatsoever > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   also <= 0: negative (74.0/23.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   also > 0: positive (21.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ridiculous > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   may <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   fun <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   great <= 0: negative (184.0/49.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   great > 0: positive (50.0/22.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   fun > 0: positive (20.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   may > 0: positive (35.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   boring > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   amazing <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   job <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   perfect <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   performance <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   especially <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   great <= 0: negative (403.0/89.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   great > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   better <= 0: positive (69.0/25.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   better > 0: negative (28.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   especially > 0: positive (31.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   performance > 0: positive (36.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   perfect > 0: positive (33.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   job > 0: positive (33.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   amazing > 0: positive (34.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   disappointment > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   although <= 0: negative (188.0/59.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   although > 0: positive (25.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   disappointing > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   less <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   show <= 0: negative (171.0/44.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   show > 0: positive (22.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   less > 0: positive (21.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   bad > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   beautifully <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   journey <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wonderfully <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   excellent <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wonderful <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   detective <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   amazing <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   unique <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   terrific <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   awesome <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   subtle <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   edge <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   superb <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   enjoyed <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   garbage <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   solid <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   greatest <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   sweet <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   loved <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   seconds <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   definitely <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   relationships <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   frank <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   excuse <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   confusing <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   touch <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   perfect <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   documentary <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   explain <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   crazy <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   favorite <= 0: negative (2025.0/521.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   favorite > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   well <= 0: negative (39.0/15.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   well > 0: positive (21.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   crazy > 0: positive (27.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   explain > 0: negative (27.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   documentary > 0: positive (31.0/13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   perfect > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   great <= 0: negative (50.0/23.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   great > 0: positive (22.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   touch > 0: positive (36.0/15.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   confusing > 0: negative (27.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   excuse > 0: negative (31.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   frank > 0: positive (30.0/12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   relationships > 0: positive (28.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   definitely > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   things <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   well <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   good <= 0: negative (28.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   good > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   like <= 0: negative (22.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   like > 0: positive (20.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   well > 0: positive (36.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   things > 0: positive (25.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   seconds > 0: negative (37.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   loved > 0: positive (74.0/30.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   sweet > 0: positive (34.0/12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   greatest > 0: positive (47.0/16.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   solid > 0: positive (48.0/15.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   garbage > 0: negative (39.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   enjoyed > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   acting <= 0: positive (93.0/25.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   acting > 0: negative (28.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   superb > 0: positive (31.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   edge > 0: positive (39.0/12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   subtle > 0: positive (37.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   awesome > 0: positive (53.0/14.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   terrific > 0: positive (33.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   unique > 0: positive (48.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   amazing > 0: positive (102.0/23.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   detective > 0: positive (35.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wonderful > 0: positive (133.0/31.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   excellent > 0: positive (220.0/50.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wonderfully > 0: positive (29.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   journey > 0: positive (32.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   beautifully > 0: positive (37.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   fails > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   entertaining <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   top <= 0: negative (347.0/86.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   top > 0: positive (26.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   entertaining > 0: positive (24.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   stupid > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   perfect <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   excellent <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   enjoy <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   great <= 0: negative (540.0/112.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   great > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   bad <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   would <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   movie <= 0: negative (25.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   movie > 0: positive (46.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   would > 0: negative (32.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   bad > 0: negative (45.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   enjoy > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   film <= 0: positive (22.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   film > 0: negative (28.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   excellent > 0: positive (25.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   perfect > 0: positive (29.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   dull > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   moment <= 0: negative (471.0/114.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   moment > 0: positive (38.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   sucks > 0: negative (152.0/35.0)
+|   |   |   |   |   |   |   |   |   |   |   pathetic > 0: negative (242.0/57.0)
+|   |   |   |   |   |   |   |   |   |   terrible > 0
+|   |   |   |   |   |   |   |   |   |   |   strong <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   wonderful <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   classic <= 0: negative (728.0/150.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   classic > 0: positive (30.0/13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   wonderful > 0: positive (25.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   strong > 0: positive (38.0/12.0)
+|   |   |   |   |   |   |   |   |   pointless > 0
+|   |   |   |   |   |   |   |   |   |   war <= 0: negative (283.0/48.0)
+|   |   |   |   |   |   |   |   |   |   war > 0: positive (23.0/9.0)
+|   |   |   |   |   |   |   |   horrible > 0
+|   |   |   |   |   |   |   |   |   war <= 0: negative (707.0/150.0)
+|   |   |   |   |   |   |   |   |   war > 0: positive (35.0/11.0)
+|   |   |   |   |   |   |   lame > 0: negative (453.0/86.0)
+|   |   |   |   |   |   wasted > 0
+|   |   |   |   |   |   |   brilliant <= 0: negative (411.0/61.0)
+|   |   |   |   |   |   |   brilliant > 0: positive (23.0/9.0)
+|   |   |   |   |   laughable > 0: negative (292.0/44.0)
+|   |   |   |   redeeming > 0: negative (230.0/28.0)
+|   |   |   poorly > 0: negative (570.0/82.0)
+|   |   awful > 0
+|   |   |   fantastic <= 0: negative (1256.0/145.0)
+|   |   |   fantastic > 0: positive (29.0/12.0)
+|   worst > 0
+|   |   wonderful <= 0: negative (2665.0/271.0)
+|   |   wonderful > 0
+|   |   |   also <= 0: negative (49.0/18.0)
+|   |   |   also > 0: positive (22.0/6.0)
+waste > 0: negative (1731.0/111.0)
+
+Number of Leaves  : 	188
+
+Size of the tree : 	375
+
+
+Time taken to build model: 1169.63 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 1.36 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        5820               77.6    %
+Incorrectly Classified Instances      1680               22.4    %
+Kappa statistic                          0.552
+Mean absolute error                      0.3108
+Root mean squared error                  0.4037
+Relative absolute error                 62.1555 %
+Root relative squared error             80.75   %
+Total Number of Instances             7500
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.777    0.225    0.775      0.777    0.776      0.552    0.837     0.816     positive
+                 0.775    0.223    0.777      0.775    0.776      0.552    0.837     0.816     negative
+Weighted Avg.    0.776    0.224    0.776      0.776    0.776      0.552    0.837     0.816
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 2914  836 |    a = positive
+  844 2906 |    b = negative
+
+
